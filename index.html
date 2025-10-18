@@ -10,6 +10,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sdasguptajr.github.io/" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Prevent theme flash: set theme early based on saved preference or system -->
+  <script>
+    (function() { 
+      try { 
+        var t = localStorage.getItem('theme'); 
+        if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e) { /* ignore */ }
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,6 +30,10 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="https://github.com/sdasguptajr" target="_blank" rel="noopener">GitHub</a>
+      <button class="theme-toggle" aria-label="Switch theme" title="Toggle theme">
+        <span class="icon" aria-hidden="true">🌙</span>
+        <span class="visually-hidden">Toggle theme</span>
+      </button>
     </nav>
   </header>
 
@@ -86,7 +100,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2025-10-18 22:18 · Built with ❤️ and GitHub Pages</p>
+    <p>© 2025-10-18 23:19 · Built with ❤️ and GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>

@@ -4,8 +4,8 @@ Personal GitHub Pages site for Sourav Dasgupta. Deployed via the special reposit
 
 ## Edit these quickly
 - `index.html`: Update LinkedIn link, project links, and copy.
-- `styles.css`: Colors, layout, and spacing.
-- `script.js`: Small UX niceties (smooth scroll, etc.).
+- `styles.css`: Colors, layout, and spacing (supports **light/dark toggle**).
+- `script.js`: Theme toggle logic + small UX niceties.
 
 ## Local preview
 Open `index.html` directly in your browser.
@@ -16,4 +16,4 @@ Open `index.html` directly in your browser.
 3. Visit **Settings → Pages** to confirm the site builds.
 4. Open https://sdasguptajr.github.io
 
-_Starter created 2025-10-18 22:18._
+_Starter updated with theme toggle 2025-10-18 23:19._
